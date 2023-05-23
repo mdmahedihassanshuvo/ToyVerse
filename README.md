@@ -1,10 +1,10 @@
-## What I do in this assignment ..!
+## What I do in this Project ..!
 
 * 1st. I try to make the website professional and working very hard.
 * 2rd. In home page implement 5 section.
-* 3th. This assignment about Toy marketplace. 
+* 3th. This Project about Toy marketplace. 
 * 4th. In this website show 3 category toys which data get from the server.
-* 5nd. In this assignment most important thing is firebase authentication, to stor database using mongodb non-sql    database.
+* 5nd. In this Project most important thing is firebase authentication, to stor database using mongodb non-sql    database.
 * 6th. To this website used ContextApi.
 * 7th. Give 4 questions answers in Blog component.
 * 8th. Use dynamic route for a particular data or object to show individually.
