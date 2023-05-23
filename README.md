@@ -12,5 +12,6 @@
 * 10th. To show user toy using filter method, only user can see his data not others.
 * 11th. In my toys page implement a sorting system to sort the toys in descending and ascending orders based on the price.
 * 12th. In all toys page implement a search system on this page, based on the Toy name.
+* 13th. To protect firebase config keys use Environment variables.
 
-* 13th. Live link: https://toy-marketplace-4ae24.web.app/
+* 14th. Live link: https://toy-marketplace-4ae24.web.app/
