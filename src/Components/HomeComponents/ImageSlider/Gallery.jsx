@@ -7,6 +7,10 @@ import gallery5 from '../../../assets/images/galery-5.jpg'
 import gallery6 from '../../../assets/images/galery-6.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import the AOS CSS file
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/pagination";
 
 const Gallery = () => {
 
@@ -15,36 +19,36 @@ const Gallery = () => {
     }, []);
 
     return (
-        <div className='lg:mb-20' data-aos="fade-right"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1000">
-            <h1 className='text-center text-xl mt-5 lg:mt-0 mb-5 lg:text-3xl text-accent font-bold lg:mb-24'>Here are some Future Toys</h1>
-            <div className='mb-5 lg:mb-0'>
-                <div id="animation-carousel" className="relative w-full" data-carousel="static">
-                    <div className="carousel carousel-center max-w-7xl p-4 mx-auto space-x-4 bg-neutral rounded-box" data-aos="fade-left"
-                        data-aos-easing="ease-out-cubic"
-                        data-aos-duration="1000">
-                        <div className="carousel-item w-80 h-64 lg:w-80 lg:h-80">
-                            <img src={gallery1} className="rounded-box lg:w-full" />
-                        </div>
-                        <div className="carousel-item  w-80 h-64 lg:w-80 lg:h-80">
-                            <img src={gallery2} className="rounded-box lg:w-full" />
-                        </div>
-                        <div className="carousel-item  w-80 h-64 lg:w-80 lg:h-80">
-                            <img src={gallery3} className="rounded-box lg:w-full" />
-                        </div>
-                        <div className="carousel-item  w-80 h-64 lg:w-80 lg:h-80">
-                            <img src={gallery4} className="rounded-box lg:w-full" />
-                        </div>
-                        <div className="carousel-item  w-80 h-64 lg:w-80 lg:h-80">
-                            <img src={gallery5} className="rounded-box lg:w-full" />
-                        </div>
-                        <div className="carousel-item  w-80 h-64 lg:w-80 lg:h-80">
-                            <img src={gallery6} className="rounded-box lg:w-full" />
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div className='lg:mb-24'>
+            <h1 className='text-center text-accent text-xs lg:text-3xl mb-4 lg:mb-12 font-semibold'>Here are some future products</h1>
+            <Swiper
+                slidesPerView={3}
+                spaceBetween={30}
+                pagination={{
+                    clickable: true,
+                }}
+                modules={[Pagination]}
+                className="mySwiper"
+            >
+                <SwiperSlide>
+                    <img className='lg:h-[413px] lg:w-[413px]' src={gallery2} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img className='lg:h-[413px] lg:w-[413px]' src={gallery3} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img className='h-[110px] lg:h-[413px] lg:w-[413px]' src={gallery4} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img className='lg:h-[413px] lg:w-[413px]' src={gallery1} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img className='h-[110px] lg:h-[413px] lg:w-[413px]' src={gallery5} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img className=' lg:h-[413px] lg:w-[413px]' src={gallery6} alt="" />
+                </SwiperSlide>
+            </Swiper>
         </div>
     );
 };

@@ -14,12 +14,12 @@ const Category = () => {
     const [activeTabIndex, setActiveTabIndex] = useState(0)
 
     return (
-        <div className='lg:mb-20 lg:mx-20' data-aos="fade-right"
+        <div className='lg:mb-20' data-aos="fade-right"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="1000">
             <h1 className='text-center text-xl mt-5 lg:mt-0 mb-5 lg:text-3xl text-accent font-bold lg:mb-24'>Toys Category</h1>
             <div>
-                <div className='grid grid-cols-1 gap-2 lg:gap-5 md:grid-cols-3 lg:mx-12 lg:mb-24 text-center'>
+                <div className='grid grid-cols-1 gap-2 lg:gap-5 md:grid-cols-3 lg:mb-24 text-center'>
                     {
                         tabsData.map((tab, index) => {
                             return (

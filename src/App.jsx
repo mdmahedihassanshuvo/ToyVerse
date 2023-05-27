@@ -19,7 +19,7 @@ function App() {
   }, [location.pathname])
 
   return (
-    <div className='bg-base-200'>
+    <div className=''>
       <Header></Header>
       <Outlet></Outlet>
       <Footer></Footer>
