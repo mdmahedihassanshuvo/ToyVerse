@@ -19,7 +19,7 @@ const Gallery = () => {
     }, []);
 
     return (
-        <div className='lg:mb-24'>
+        <div className='lg:mb-24' data-aos="fade-left">
             <h1 className='text-center text-accent text-xs lg:text-3xl mb-4 lg:mb-12 font-semibold'>Here are some future products</h1>
             <Swiper
                 slidesPerView={3}

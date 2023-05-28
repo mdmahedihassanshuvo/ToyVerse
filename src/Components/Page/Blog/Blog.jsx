@@ -1,8 +1,12 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const Blog = () => {
     return (
         <div className='lg:mx-20 lg:my-20'>
+            <Helmet>
+                <title>ToyVerse | Blog</title>
+            </Helmet>
             <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-xl">
                 <div className="collapse-title text-xl font-medium">
                     What is an access token and refresh token? How do they work and where should we store them on the client-side?
@@ -13,7 +17,7 @@ const Blog = () => {
             </div>
             <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-xl">
                 <div className="collapse-title text-xl font-medium">
-                Compare SQL and NoSQL databases?
+                    Compare SQL and NoSQL databases?
                 </div>
                 <div className="collapse-content">
                     <p>In SQL Databases Structured and predefined schema. And NoSQL Databases Flexible schema or schema-less. SQL Database vertically scalable. And NoSQL database horizontal scalability for handling large data and high traffic. SQL database relational data model with tables and columns. NoSQL database Support various data models key-value, document, columnar, graph etc.</p>
@@ -21,7 +25,7 @@ const Blog = () => {
             </div>
             <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-xl">
                 <div className="collapse-title text-xl font-medium">
-                What is express js? What is Nest JS (google it)?
+                    What is express js? What is Nest JS (google it)?
                 </div>
                 <div className="collapse-content">
                     <p>Express js is a minimalist web framework for node.js . Express.js make very easy to the process of handling HTTP requests, routing, middleware integration, and managing server-side logic. Nest JS is a progressive nodejs framework. It build for efficient, scalable, and maintainable server-side applications.</p>
@@ -29,7 +33,7 @@ const Blog = () => {
             </div>
             <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-xl">
                 <div className="collapse-title text-xl font-medium">
-                What is MongoDB aggregate and how does it work (google it)?
+                    What is MongoDB aggregate and how does it work (google it)?
                 </div>
                 <div className="collapse-content">
                     <p>MongoDB aggregation is a powerful tool for performing advanced data processing and analysis tasks within the MongoDB database. It is use for a doc grouping, sorting, filtering, transfer etc.</p>

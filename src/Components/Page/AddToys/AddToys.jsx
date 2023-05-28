@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../../../AuthProvider/AuthProvider';
 import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet-async';
 
 const AddToys = () => {
 
@@ -38,24 +39,27 @@ const AddToys = () => {
             },
             body: JSON.stringify(toy)
         })
-        .then(res => res.json())
-        .then(data => {
-            console.log(data);
-            if(data.insertedId){
-                Swal.fire({
-                    position: 'center',
-                    icon: 'success',
-                    title: 'Toy added successfully',
-                    showConfirmButton: false,
-                    timer: 1500
-                  })
-                  form.reset()
-            }
-        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.insertedId) {
+                    Swal.fire({
+                        position: 'center',
+                        icon: 'success',
+                        title: 'Toy added successfully',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                    form.reset()
+                }
+            })
     }
 
     return (
         <div className='lg:mt-10 lg:mx-20 lg:mb-20'>
+            <Helmet>
+                <title>ToyVerse | Add Toys</title>
+            </Helmet>
             <h3 className='text-center text-3xl font-bold text-accent mb-10'>Add Toys for sale !</h3>
             <form onSubmit={handleForm} className='grid grid-cols-1 md:grid-cols-2 gap-3'>
                 <div className="form-control">

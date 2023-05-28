@@ -3,6 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 import MytoysRow from '../../MyToysComponent/MytoysRow';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../../../AuthProvider/AuthProvider';
+import { Helmet } from 'react-helmet-async';
 
 const MyToys = () => {
 
@@ -72,6 +73,9 @@ const MyToys = () => {
 
     return (
         <div className='lg:my-10 lg:mx-20'>
+            <Helmet>
+                <title>ToyVerse | My Toys</title>
+            </Helmet>
             <div className="dropdown">
                 <label tabIndex={0} className='btn btn-accent text-white lg:mb-5'>Sort by Price</label>
                 <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">

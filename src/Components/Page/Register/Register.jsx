@@ -3,6 +3,7 @@ import { FaGoogle } from 'react-icons/fa';
 import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../AuthProvider/AuthProvider';
 import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet-async';
 
 const Register = () => {
 
@@ -54,6 +55,9 @@ const Register = () => {
 
     return (
         <div className="hero min-h-screen lg:mb-5">
+            <Helmet>
+                <title>Sign Up</title>
+            </Helmet>
             <div className="hero-content flex-col ">
                 <div className="text-center lg:text-left">
                     <h1 className="text-5xl font-bold">Sign Up!</h1>

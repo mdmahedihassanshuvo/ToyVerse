@@ -6,17 +6,17 @@ import { useEffect } from 'react'
 
 function App() {
 
-  const location = useLocation()
-  // console.log(location)
+  // const location = useLocation()
+  // // console.log(location)
 
-  useEffect(() => {
-    if (location.pathname === '/') {
-      document.title = `ToyVerse - Home`
-    }
-    else {
-      document.title = `ToyVerse ${location.pathname.replace('/', '- ')}`
-    }
-  }, [location.pathname])
+  // useEffect(() => {
+  //   if (location.pathname === '/') {
+  //     document.title = `ToyVerse - Home`
+  //   }
+  //   else {
+  //     document.title = `ToyVerse ${location.pathname.replace('/', '- ')}`
+  //   }
+  // }, [location.pathname])
 
   return (
     <div className=''>

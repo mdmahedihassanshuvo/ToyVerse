@@ -25,7 +25,7 @@ const Banner = () => {
             className='lg:mb-20 mx-5 lg:mx-0'
         >
             <div>
-                <img src={img5} />
+            <img src={img5} alt="" />
             </div>
             <div className='lg:h-[671px]'>
                 <img src={img1} />

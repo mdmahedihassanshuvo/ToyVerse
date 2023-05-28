@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import AllToysRow from '../../AllToysComponent/AllToysRow';
 import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet-async';
 
 const AllToys = () => {
 
@@ -26,7 +27,9 @@ const AllToys = () => {
 
     return (
         <div className='lg:my-10'>
-
+            <Helmet>
+                <title>ToyVerse | All Toys</title>
+            </Helmet>
             <div className="form-control lg:mx-20 lg:mb-5">
                 <div className="input-group">
                     <input ref={searchRef} type="text" placeholder="Search…" className="input input-bordered" />
