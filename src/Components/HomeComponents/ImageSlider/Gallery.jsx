@@ -33,28 +33,28 @@ const Gallery = () => {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <LazyLoadImage  effect="blur" className='img-fluid lg:h-[413px] lg:w-[413px]' variant="top"  src={gallery2} />
+                    <LazyLoadImage  effect="blur" className='img-fluid h[100px] lg:h-[413px] lg:w-[413px]' variant="top"  src={gallery2} />
                     {/* <img className='lg:h-[413px] lg:w-[413px]' src={gallery2} alt="" /> */}
                 </SwiperSlide>
                 <SwiperSlide>
                     {/* <img className='lg:h-[413px] lg:w-[413px]' src={gallery3} alt="" /> */}
-                    <LazyLoadImage effect="blur" className='img-fluid lg:h-[413px] lg:w-[413px]' variant="top"  src={gallery3} />
+                    <LazyLoadImage effect="blur" className='img-fluid h[100px] lg:h-[413px] lg:w-[413px]' variant="top"  src={gallery3} />
                 </SwiperSlide>
                 <SwiperSlide>
                     {/* <img className='h-[110px] lg:h-[413px] lg:w-[413px]' src={gallery4} alt="" /> */}
-                    <LazyLoadImage effect="blur" className='img-fluid lg:h-[413px] lg:w-[413px]' variant="top"  src={gallery4} />
+                    <LazyLoadImage effect="blur" className='img-fluid h[100px] lg:h-[413px] lg:w-[413px]' variant="top"  src={gallery4} />
                 </SwiperSlide>
                 <SwiperSlide>
                     {/* <img className='lg:h-[413px] lg:w-[413px]' src={gallery1} alt="" /> */}
-                    <LazyLoadImage effect="blur" className='img-fluid lg:h-[413px] lg:w-[413px]' variant="top"  src={gallery1} />
+                    <LazyLoadImage effect="blur" className='img-fluid h[100px] lg:h-[413px] lg:w-[413px]' variant="top"  src={gallery1} />
                 </SwiperSlide>
                 <SwiperSlide>
                     {/* <img className='h-[110px] lg:h-[413px] lg:w-[413px]' src={gallery5} alt="" /> */}
-                    <LazyLoadImage effect="blur" className='img-fluid lg:h-[413px] lg:w-[413px]' variant="top"  src={gallery5} />
+                    <LazyLoadImage effect="blur" className='img-fluid h[100px] lg:h-[413px] lg:w-[413px]' variant="top"  src={gallery5} />
                 </SwiperSlide>
                 <SwiperSlide>
                     {/* <img className=' lg:h-[413px] lg:w-[413px]' src={gallery6} alt="" /> */}
-                    <LazyLoadImage effect="blur" className='img-fluid lg:h-[413px] lg:w-[413px]' variant="top"  src={gallery6} />
+                    <LazyLoadImage effect="blur" className='img-fluid h[100px] lg:h-[413px] lg:w-[413px]' variant="top"  src={gallery6} />
                 </SwiperSlide>
             </Swiper>
         </div>

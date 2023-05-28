@@ -16,7 +16,7 @@ const LatestBlog = () => {
     }, []);
 
     return (
-        <div className='mx-5 lg:mx-20 lg:mb-20' data-aos="zoom-in-up"
+        <div className='mx-5 lg:mx-20 lg:mb-20 hidden lg:block' data-aos="zoom-in-up"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="1500">
             <h2 className='text-center text-3xl font-bold text-accent lg:mb-16'>Latest Blogs</h2>
